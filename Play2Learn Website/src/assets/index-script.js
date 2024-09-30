@@ -6,11 +6,11 @@ const mathb = document.getElementById("play-b");
 // add onclick event listeners to the anagramb and mathb elements
 // When the button elements are clicked, game opens 
 anagramb.addEventListener("click", function () {
-  window.open("/src/public/games/anagram-hunt.html");
+  window.open("../public/games/anagram-hunt.html");
 });
 // //as above, but for math facts game
 mathb.addEventListener("click", function () {
-  window.open("/src/public/games/math-facts.html");
+  window.open("../public/games/math-facts.html");
 });
 
 //random quote generator: 
