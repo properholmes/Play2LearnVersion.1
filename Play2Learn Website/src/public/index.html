@@ -1,6 +1,12 @@
+<!--  declare the document type, 
+      set language to English, encoding to UTF-8,
+      proper scaling for multiple devices, 
+      connect fonts / service & resources,
+      fontawesome, and stylesheets-
+      set the Title of the page
+ -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,17 +24,26 @@
 </head>
 
 <body>
+  <!-- header, navigation-->
   <header>
-    <!-- create navigation menu -->
+    <!-- container for navbar -->
     <div class="nav-container">
+      <!-- navigation bar element -->
       <nav class="navbar">
+        <!-- p2l logo -->
         <h1 id="navbar-logo">
+          <!-- display Font Awesome frog -->
           <i class="fa-solid fa-frog"></i>
+          <!-- banner w/ link to index.html and title attribute for accessibility -->
           <a href="index.html" id="banner" title="Play2Learn Home Page">Play2Learn</a>
         </h1>
+        <!-- unordered list for nav links -->
         <ul class="nav-menu">
+          <!-- links as list-items -->
           <li class="nav-links"><a href="index.html">Home</a></li>
+          <!-- game section drop-down -->
           <li class="nav-links" id="games">Games</a>
+            <!-- nested unordered list for both games -->
             <ul id="games-links">
               <li class="nav-links p2lgames"><a href="games/anagram-hunt.html" target="_blank">Anagram
                   Hunt</a></li>
@@ -42,37 +57,44 @@
       </nav>
     </div>
   </header>
-
+  <!-- main content / rotating testimonials & game selection -->
   <main>
     <br>
+    <!-- aside, for testimonials -->
     <aside id="testimonials">
-      <!-- quote (top, middle) should change every 10 secs 
-       ..at least 3 quotes that it rotates through 
-       Each quote by a different person -->
       <h2>Happy Clients Say...</h2>
-        <span>
-          <p id="quote"></p>
-        </span>
+      <span>
+        <!-- placeholeder for rotating quotes -->
+        <p id="quote"></p>
+      </span>
     </aside>
     <br>
+    <!-- sections for selecting games -->
     <section id="gameselect">
-      <article id="article1" >
-        <!-- show 2 games, only develop 1 (math facts)-->
+      <!-- article for game 1 (Anagrams) -->
+      <article id="article1">
+        <!-- title & description -->
         <h2>Anagram Hunt:</h2>
-        <p>Calling all word wizards! Dive into Anagram Hunt, a game that challenges you to find all the hidden words formed by rearranging the letters of a given word.</p>
+        <p>Calling all word wizards! Dive into Anagram Hunt, a game that challenges you to find all the hidden words
+          formed by rearranging the letters of a given word.</p>
+        <!-- button to take you to the game (new window) -->
         <button class="a-button" id="play-a">Play</button>
       </article>
       <br>
       <article id="article2">
+        <!-- title & description -->
         <h2>Math Facts Practice:</h2>
-        <p>Fun and effective Math Practice, for all ages! A super fun way to sharpen your math skills and become a whiz with numbers! Ready for the challenge?</p>
+        <p>Fun and effective Math Practice, for all ages! A super fun way to sharpen your math skills and become a whiz
+          with numbers! Ready for the challenge?</p>
+        <!-- button to take you to the game (new window) -->
         <button class="a-button" id="play-b">Play</button>
       </article>
     </section>
   </main>
-
+  <!-- footer, containing info, links via icons, and script src 
+        (an external js file for testimonial's funtionality) -->
   <footer class="footer">
-    <p id="copywrite" aria-label="website Copywritten 2024 by Play2Learn" >&copy; 2024 Play2Learn</p>
+    <p id="copywrite" aria-label="website Copywritten 2024 by Play2Learn">&copy; 2024 Play2Learn</p>
     <address>
       <a href="contact-us.html" target="_blank">
         <i class="fa-regular fa-envelope" id="email-p2l" alt="Email icon"></i></a>
@@ -84,6 +106,7 @@
         <i class="fa-brands fa-facebook" id='meta-fb' alt="Meta-Facebook icon"></i></a>
     </address>
   </footer>
-<script src="../assets/index-script.js"></script>
+  <script src="../assets/index-script.js"></script>
 </body>
+
 </html>

@@ -133,8 +133,7 @@ body {
     display: fixed;
     border: 1px solid black;
     border-radius: .75em;
-    margin-top: 25px;
-    margin-bottom: 10px;
+    margin-top: 33px;
     margin-left: 27%;
     margin-right: 27%;
 }
@@ -154,12 +153,9 @@ body {
     display: flex;
     flex-flow: wrap;
     justify-content: center;
-    padding-top: 2%;
+    padding-top: 1%;
     padding-bottom: 2%;
-    margin-top: 2%;
-    margin-right: 2%;
-    margin-left: 2%;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 #gameselect h2 {
@@ -185,7 +181,7 @@ body {
     align-items: center;
     position: relative;
     z-index: 1;
-    margin: 5%;
+    margin: 15px;
 }
 
 #gameselect,
@@ -365,8 +361,8 @@ p {
 #contact-us {
     background-color: var(--minty);
     justify-content: center;
-    padding: 2%;
-    margin: 20px auto;
+    padding: 30px;
+    margin: 70px auto;
     border: solid 1px black;
 }
 

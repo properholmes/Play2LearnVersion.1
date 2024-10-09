@@ -42,35 +42,43 @@
       </nav>
     </div>
   </header>
-
+  <!-- Create 2 forms: 
+     A Login form: email / pwd
+      and a Register form.. email / pwd / repeat pwd
+    When user clicks on 'Need An Account? Register link, use javascript to hide 
+    the login form and show the register form. Both forms should have an action of 
+    javascript:alert('Form Submitted'), alerting that the form was submitted 
+    -->
   <main>
-    <!-- Create the login form: email / pwd
-Create register form.. email / pwd / repeat pwd
-When user clicks on 'Need An Account? Register link, 
-use javascript to hide the login form and show the register form
-Both forms should have an action of javascript:alert('Form Submitted'), alerting that
-the form was submitted 
--->
-    <form id="login-form" action="post">
+    <!-- action to alert on submission -->
+    <form id="login-form" action="javascript:alert('Welcome! Log in successful!');">
+      <!-- labels and inputs for email and pw fields -->
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" required>
       <label for="pwd">Password:</label>
+      <!-- required validation for pw -->
       <input type="password" id="pwd" name="pwd" required>
+      <!-- submit button to log in user -->
       <button type="submit">Login</button>
-      <!-- Hide login form when creating new account, use Javascript to hide the login form and show the register form-->
-      <a href="javascript:void" id="btn-reg">Need an Account? Register</a>
+      <!-- hide login form when creating a new account, use JS to hide the login form and show the register form 
+          Link will trigger the display of the registration form, using JS-->
+      <a href="javascript:void(0)" id="btn-reg">Need an Account? Register</a>
     </form>
-    <form id="register" action="post">
+    <!-- registration form element with action to alert on submission; hidden by default -->
+    <form id="register" action="javascript:alert('Registration Form Submitted');" style="display:none;">
+      <!-- labels and inputs for registration email, pw, and pw repeat fields -->
       <label for="reg-email">Email:</label>
       <input type="email" id="reg-email" name="email" required>
       <label for="r-pwd">Password:</label>
       <input type="password" id="r-pwd" name="pwd" required>
       <label for="r-pwdrpt">Repeat Password:</label>
-      <input type="r-passwordrpt" id="r-pwdrpt" name="r-pwd" required>
+      <input type="password" id="r-pwdrpt" name="r-pwd" required>
+      <!-- age confirmation field, required w/checkbox (input and label below)-->
       <div id="check-container">
         <input type="checkbox" id="agecheck" name="age" required />
         <label for="age" id="age-label">I am over 13 and like playing games.</label>
       </div>
+      <!-- button to submit user registration, triggers alert upon submission -->
       <button type="submit">Register</button>
     </form>
   </main>
